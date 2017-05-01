@@ -80,8 +80,9 @@
   var subForm = document.getElementById('prevent-form-submission-form');
 
   function alertClick(evt) {
-      alert("Here is your alert!");
-      evt.preventDefault();
+    evt.preventDefault();
+    
+    alert("Here is your alert!");
   }
 
   subForm.addEventListener('submit', alertClick);
